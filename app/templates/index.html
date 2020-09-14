@@ -9,6 +9,11 @@
         {% endif %}
     </head>
     <body>
-
+        <h3> News@one</h3>
+        <ul>
+           {% for popular_movie in popular %}
+               <li>{{ news.title}}</li>
+           {% endfor %}
+       </ul>
     </body>
 </html>
