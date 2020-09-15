@@ -1,0 +1,2 @@
+API_KEY = '63a6e13ee20244429ff2fa72529d69c5'
+SECRET_KEY= 'lucky'

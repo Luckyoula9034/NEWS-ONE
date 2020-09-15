@@ -1,0 +1,21 @@
+body{
+    background-image:url('https://bit.ly/3iwsJtv');
+}
+#welcome{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+     
+}
+
+#text{
+    position: relative;
+}
+#element {
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+      position: absolute;
+   
+  }

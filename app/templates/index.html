@@ -1,19 +1,24 @@
-<h1> {{ message }} </h1><!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title>  Welcome to The latest News Review Website Online.  </title>
-        {% endif %}
-    </head>
-    <body>
-        <h3> News@one</h3>
+
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+<!-- Content block -->
+{% block content %}
+
+<div id="text">
+    <div>
+        <img src="../static/images/news.jpeg" style="width: 100%; height: 60vh;">
+    </div>
+    
+    <div class="element" id="welcome">
+        <a  href="#content" class="btn btn-success btn-lg"><span class="badge">Welcome to News@One </span></a>
+    </div>
+
+    <div id="content">
         <ul>
-           {% for popular_movie in popular %}
-               <li>{{ news.title}}</li>
-           {% endfor %}
-       </ul>
-    </body>
-</html>
+            {{ macro.displaySourcesList(sources)}}
+        </ul>
+    </div>
+</div>
+
+{% endblock%}
